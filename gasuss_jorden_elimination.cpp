@@ -25,6 +25,16 @@ int main(){
        {1,1,1,6},
        {4,8,3,29}};
     for(int j=0;j<n;j++){
+        //with partial pivoting
+        
+        // int max_row=j;
+        // for(int i=j+1;i<n;i++){
+        //     if(fabs(a[i][j])>fabs(a[j][j])){
+        //         max_row=i;
+        //     }
+        // }
+        // swap(a[j],a[max_row]);
+        
         if (a[j][j] == 0) { // Check for zero pivot
             cout << "Divide by zero error" << endl;
             return -1;
